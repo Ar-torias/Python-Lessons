@@ -15,3 +15,20 @@ Bart
 ```
 
 **注意:** 观察 for 循环在遍历set时，元素的顺序和list的顺序很可能是不同的，而且不同的机器上运行的结果也可能不同。
+
+### 任务
+
+请用 for 循环遍历如下的set，打印出 name: score 来。
+
+```python
+s = set([('Adam', 95), ('Lisa', 85), ('Bart', 59)])
+```
+
+代码：
+
+```python
+s = set([('Adam', 95), ('Lisa', 85), ('Bart', 59)])
+for x in s:
+    print x[0],":",x[1]
+```
+

@@ -23,3 +23,33 @@ for x in L:
     sum = sum + x
     n = n + 1
 ```
+### 任务
+
+对已有的计算 0 - 100 的while循环进行改造，通过增加 continue 语句，使得只计算奇数的和：
+
+```python
+sum = 0
+x = 1
+while True:
+    sum = sum + x
+    x = x + 1
+    if x > 100:
+        break
+print sum
+```
+
+改正为：
+
+```python
+sum = 0
+x = 0
+while True:
+    x+=1
+    if x > 100:
+        break
+    if not x%2:
+        continue
+    sum+=x
+print sum
+```
+

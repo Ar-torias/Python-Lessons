@@ -27,3 +27,27 @@ d = {
     'Bart': 59
 }
 ```
+### 任务
+
+请用 for 循环遍历如下的dict，打印出 name: score 来。
+
+```python
+d = {
+    'Adam': 95,
+    'Lisa': 85,
+    'Bart': 59
+}
+```
+
+代码：
+
+```python
+d = {
+    'Adam': 95,
+    'Lisa': 85,
+    'Bart': 59
+}
+for key in d:
+    print key,':',d[key]
+```
+

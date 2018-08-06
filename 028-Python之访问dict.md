@@ -45,3 +45,35 @@ if 'Paul' in d:
 >>> print d.get('Paul')
 None
 ```
+### 任务
+
+根据如下dict：
+
+```python
+d = {
+    'Adam': 95,
+    'Lisa': 85,
+    'Bart': 59
+}
+```
+
+请打印出：
+
+```python
+Adam: 95
+Lisa: 85
+Bart: 59
+```
+
+代码：
+
+```python
+d = {
+    'Adam': 95,
+    'Lisa': 85,
+    'Bart': 59
+}
+for name in ['Adam', 'Lisa', 'Bart']:
+    print "%s:%d"%(name, d[name])
+```
+

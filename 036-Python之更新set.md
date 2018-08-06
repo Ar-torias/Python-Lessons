@@ -42,3 +42,26 @@ KeyError: 4
 ```
 
 所以用add()可以直接添加，而remove()前需要判断。
+
+### 任务
+
+针对下面的set，给定一个list，对list中的每一个元素，如果在set中，就将其删除，如果不在set中，就添加进去。
+
+```python
+s = set(['Adam', 'Lisa', 'Paul'])
+L = ['Adam', 'Lisa', 'Bart', 'Paul']
+```
+
+代码：
+
+```python
+s = set(['Adam', 'Lisa', 'Paul'])
+L = ['Adam', 'Lisa', 'Bart', 'Paul']
+for name in L:
+    if name in s:
+        s.remove(name)
+    else:
+        s.add(name)
+print s
+```
+
