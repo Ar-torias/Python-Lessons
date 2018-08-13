@@ -60,3 +60,27 @@ def is_sqr(x):
 print filter(is_sqr, range(1, 101))
 ```
 
+或者：
+
+```python
+import math
+
+def is_sqr(x):
+    v = math.sqrt(x)
+    return int(v) == v
+
+print filter(is_sqr, range(1, 101))
+```
+
+而在Python3中需要写成：
+
+```python
+import math
+
+def is_sqr(x):
+    return math.sqrt(x) % 1 == 0
+
+tmp = filter(is_sqr, range(1, 101))
+print(list(tmp))
+```
+
