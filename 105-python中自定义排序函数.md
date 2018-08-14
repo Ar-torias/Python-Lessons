@@ -1,4 +1,4 @@
-## python中自定义排序函数
+## Python中自定义排序函数
 
 Python内置的 **sorted()**函数可对list进行排序：
 
@@ -48,5 +48,25 @@ def cmp_ignore_case(s1, s2):
     return cmp(s1.lower(), s2.lower())
 
 print sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
+```
+
+或者：
+
+```python
+def cmp_ignore_case(s1, s2):
+    u1=s1.upper()
+    u2=s2.upper()
+    if u1 < u2:
+        return -1
+    if u1 > u2:
+        return 1
+    return 0
+print sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
+```
+
+更有甚者：
+
+```python
+print(sorted(['bob', 'about', 'Zoo', 'Credit'], key=lambda x: x.lower()))
 ```
 

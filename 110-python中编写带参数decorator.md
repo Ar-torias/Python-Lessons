@@ -1,4 +1,4 @@
-## python中编写带参数decorator
+## Python中编写带参数decorator
 
 考察上一节的 @log 装饰器：
 

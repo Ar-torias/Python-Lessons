@@ -1,4 +1,4 @@
-## python中编写无参数decorator
+## Python中编写无参数decorator
 
 Python的 decorator 本质上就是一个高阶函数，它接收一个函数作为参数，然后，返回一个新函数。
 

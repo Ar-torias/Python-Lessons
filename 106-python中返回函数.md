@@ -1,4 +1,4 @@
-## python中返回函数
+## Python中返回函数
 
 Python的函数不但可以返回int、str、list、dict等数据类型，还可以返回函数！
 
@@ -85,6 +85,20 @@ def calc_prod(lst):
     def prod():
         return reduce(lambda x, y : x * y, lst)
     return prod
+
+f = calc_prod([1, 2, 3, 4])
+print f()
+```
+
+或者：
+
+```python
+def calc_prod(lst):
+    def prod(x1, x2):
+        return x1 * x2
+    def c_prod():
+        return reduce(prod, lst)
+    return c_prod
 
 f = calc_prod([1, 2, 3, 4])
 print f()
