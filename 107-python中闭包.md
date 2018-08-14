@@ -75,3 +75,10 @@ def count():
 f1, f2, f3 = count()
 print f1(), f2(), f3()
 ```
+或者：
+
+```python
+f1,f2,f3=[(lambda i=j:i**2) for j in range(1,4)]
+print f1(), f2(), f3()
+```
+
